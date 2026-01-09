@@ -4,771 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mojo Dispensary</title>
-    <style>
-.whole{
-    background-color: #F2F0EB;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    
-}
-body{
-    width: 100%;
-}
-*{box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.first{
-    font-family: 'Margin Demo', sans-serif;
-}
-.home{
-    display: flex;
-    gap: 100px;
-    font-family: 'Margin Demo', sans-serif;
-    font-size: 24px;
-}
-li{
-    list-style: none;
-}
-.image{
-    position: relative;
-    height: 685px;
-    width: 1383px;
-}
-.image-text{
-display: flex;
-}
-.mojo-text{
-    position: absolute;
-    color: #F2F0EB;
-    top: 0px;
-    left: 20px;
-    font-size: 90px;
-    margin-left: 60px;
-}
-.order-online{
- position: absolute;
-    color: #000000;
-    padding: 20px;
-    background-color: #F2F0EB;
-    border-radius: 5px;
-    width: 187px;
-    bottom: 130px;
-    left: 20px;
-    font-size: 20px;
-    text-align: center;
-    margin-left: 60px;
-}
-.boxes{
-    display: flex;
-    justify-content: space-between;
-}
-.box{
-    flex: 1;
-    padding: 20px;
-}
-.second-part{
-    display: flex;
-    gap: 1%;
-    font-family: 'Margin Demo', sans-serif;
-    width: 1388px;
-    height: 322px;
-}
-
-.merch-image{
-      position: relative;
-      height: 322px;
-    width: 683px;
-}
-.merch-text{
-    position: relative;
-    display: flex;
-}
-
-.Our-Merch{
-position: absolute;
- color: #F2F0EB;
-    bottom: 140px;
-    left: 146px;
-    font-size: 50px;
-    margin-left: 60px;
-
-}
-.shop-merch{
-position: absolute;
-color: #000000;
-    padding: 20px;
-    background-color: #F2F0EB;
-    border-radius: 5px;
-    width: 197px;
-    bottom: 59px;
-    left: 150px;
-    font-size: 20px;
-    text-align: center;
-    margin-left: 60px;
-}
-.our-products{
-    position: relative;
-   
-}
-.product-image{
-    position: relative;
-   height: 322px;
-    width: 683px;
-}
-.ourproduct-text{
-    display: flex;
-}
-
-.product-text{
-position: absolute;
- color: #F2F0EB;
-    top: 39%;
-    left: 170px;
-    font-size: 50px;
-    margin-left: 60px;
-
-}
-.shop-product{
-position: absolute;
-color: #000000;
-    padding: 20px;
-    background-color: #F2F0EB;
-    border-radius: 5px;
-    width: 187px;
-    top: 60%;
-    right: 220px;
-    font-size: 20px;
-    text-align: center;
-    margin-left: 60px;
-}
-.third-part{
-position: relative;  
-height:  650px;  
-
-}
-.third-part image{
-    display: flex;
-    position: relative;
-}
-.Big-image img{
-
-    width: 475.42px;
-    height: 504px;
-    position: relative;
-    top: 10px;
-    left: 800px;
-}
-.UpperRightImage img{
-    position: absolute;
-   top :80px;
-   right: 30px;
-   width: 154.75px;
-   height: 164.05px;
-}
-
-.LowerLeftImage img{
-     position: absolute;
-     top :290px;
-   right:500px;
-   width: 154.75px;
-   height: 164.05px;
-}
-.WhoWeAre{
-    font-family: 'Margin Demo', sans-serif;
-    font-size: 55px;
-}
-.other-text{
-    font-size: 18px;
-   font-family: "Plus Jakarta Sans", sans-serif;
-   line-height: 1.7;
-}
-.text{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-width: 513px;
-height: 290px;
-bottom: 590px;
-left: 60px;
-}
-.learn-more{
-     font-family: 'Margin Demo', sans-serif; 
-color: #FFFFFF;
-    padding: 20px;
-    background-color: #3C5765;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 20px;
-  width: 187px;
-}
-.fourth-part{
-    position: relative;
-}
-.Our-Philosophy{
-     font-family: 'Margin Demo', sans-serif; 
-     color: #FFFFFF;
-     text-align: center;
-     font-size: 55px;
-}
-.area{
-    background-color: #434C56;
-    position: relative;
-    display: flex;
-     width: 1513px;
-    height: 3303px;
-}
-.header{
-     font-family: 'Margin Demo', sans-serif; 
-     color: #FFFFFF;
-     font-size: 45px;
-}
-.other{
-     font-size: 18px;
-   font-family: "Plus Jakarta Sans", sans-serif;
-   line-height: 1.7;
-}
-.cannabis img{
-    position: relative;
-    left: 94px;
-    top: 80px;
-}
-.cannabisText{
-    position: relative;
-    left: 650px;
-    bottom: 293px;
-    width: 425.09px;
-    height: 262.51px;
-    line-height: 1.2;
-}
-.KeptFresh img{
-    position: relative;
-    top: 700px;
-     left: 250px;
-}
-.keptText{
-    position: relative;
-    top: 400px;
-    right: 300px;
-    line-height: 1.2;
-}
-.pharmacist img{
-    position: relative;
-    top: 1300px;
-    right: 730px;
-}
-.pharmacistText{
-    position: relative;
-    top: 990px;
-    right: 140px;
-    width: 467.6px;
-    height: 262.51px;
-    line-height: 1.2;
-}
-.lab img{
-    position: relative;
-    top: 2000px;
-    right: 580px;
-}
-.labText{
-    position: relative;
-top: 1700px;
-right: 1200px;
-line-height: 1.2;
-}
-.drive img{
-    position: relative;
-      top: 2700px;
-      right: 1650px;
-}
-.driveText{
-    position: relative;
-    top: 2300px;
-    right: 1000px;
-    width: 467.6px;
-    height: 146.17px;
-    line-height: 1.2;
-}
-.fifth-part{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-   
-}
-.latestArticle{
- font-family: 'Margin Demo', sans-serif; 
- font-size: 55px;
- position: relative;
- top: 100px;
- left: 170px;
-}
-.view{
-     font-family: 'Margin Demo', sans-serif; 
-color: #FFFFFF;
-    padding: 20px;
-    background-color: #3C5765;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 20px;
-  width: 187px;
-  position: relative;
-  top: 19px;
-  left: 1100px;
-}
-.thanksgiving{
-    position: relative;
-    border: 2px solid #3C5765;
-    border-radius: 12px;
-    width: 384px;
-    height: 299px;
-    line-height: 1.59;
-}
-.byKenna{
-    color: #000000;
-   font-family: "Plus Jakarta Sans", sans-serif;
-   font-size: 12px;
-   font-weight: 600;
-   position: relative;
-   left: 10px;
-}
-.afterKenna{
-    color: #000000;
-    font-family: 'Margin Demo', sans-serif;
-    font-size: 22px;
-    position: relative;
-   left: 10px;
-}
-.happy{
-    position: relative;
-    border: 2px solid #3C5765;
-    border-radius: 12px;
-    width: 384px;
-    height: 299px;
-    line-height: 1.59;
-}
-.depression{
-    position: relative;
-    border: 2px solid #3C5765;
-    border-radius: 12px;
-    width: 384px;
-    height: 299px;
-    line-height: 1.59;
-}
-.articles{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 100px;
-    width: 1220px;
-      height: 299px;
-      left: 100px;
-}
-.reachImage img{
-    position: relative;
-    top: 200px;
-    left: 700px;
-}
-.reachHeader{
-    color: #000000;
-    font-family: 'Margin Demo', sans-serif;
-    font-size: 55px;
-}
-.reachOther{
-    line-height: 1.5;
-    color: #000000;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 18px;
-}
-.email{
-    line-height: 1.5;
-    font-family: 'Margin Demo', sans-serif; 
-color: #FFFFFF;
-    padding: 20px;
-    background-color: #3C5765;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 20px;
-  width: 199px;
-  height: 20px;
-  position: relative;
-  top: 20px;
-}
-.reachText{
-    position: relative;
-    line-height: 2;
-    bottom: 190px;
-    left: 60px
-}
-.seventh-part{
-    position: relative;
-  width: 1220px;
-  height: 361px;
-  left: 50px;
-  top: 60px;
-}
-.igImages img{
-   width: 230px;
-   height: 230px; 
-   justify-content: space-evenly;
-}
-.igImages{
-    position: relative;
-    display: flex;
-     justify-content: space-evenly;
-}
-.followUs{
-    position: relative;
-     font-family: 'Margin Demo', sans-serif; 
-     color: #000000;
-     font-size: 45px;
-}
-.question{
-    position: relative;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 16px;
-    text-align: end;
-    bottom: 79px;
-
-}
-.last-part{
-    background-color: #3C5765;
-    width: 100%;
-    height: 486px;
-    position: relative;
-    top: 67px;
-    left: 25px;
-    display: flex;
-}
-.navigation{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: #FFFFFF;
-    width: 144px;
-    height: 279px;
-    line-height: 2.4;
-    position: relative;
-    left: 200px;
-    top: 40px;
-    font-size: 14px;
-}
-.location{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: #FFFFFF;
-    width: 199px;
-    height: 173px;
-    line-height: 2.5;
-    position: relative;
-    left: 290px;
-    top: 40px;
-    font-size: 14px;
-}
-.hours{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: #FFFFFF;
-    width: 150px;
-    height: 155px;
-    line-height: 2.5;
-    position: relative;
-    left: 390px;
-    top: 40px;
-    font-size: 14px;
-}
-.news{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: #FFFFFF;
-    width: 355px;
-    height: 227.84px;
-    line-height: 2.5;
-    position: relative;
-    left: 490px;
-    top: 40px;
-    font-size: 14px;
-}
-.enter{
-    position: relative;
-    width: 355px;
-    height: 47px;
-    border: 2px solid #FFFFFF;
-    top: 10px;
-    text-align:center;
-    border-radius: 6px;
-}
-.signUp{
-     font-family: 'Margin Demo', sans-serif; 
-color: #3C5765 ;
-    padding: 20px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 20px;
-  width: 169px;
-  height: 19px;
-  position: relative;
-  bottom: 10px;
-}
-.iconsImg{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 80px;
-    top: 10px;
-} 
-
-  @media (min-width: 319px) and (max-width: 480px) {
- .last-part{
-    border: 2px solid yellow;
- }
-  }
-
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.cdnfonts.com/css/margin-demo" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-                
 </head>
 <body>
-    <div class="whole">
-        <div class="first">
-<div class="home">
- <li>Online Shop</li>  
- <li> Get medical card</li>
- <li>Blog</li>
- <li><img src="./MOJO LOGO.png"></a></li>
- <li>About us</li>
- <li>Contact</li>
- </div>
- <div class="image">
- <hr \>
- <img src="./The Mojo Dispensary Image.png" class="Mojo">
- <div class="image-text">
-    <div class="mojo-text">
-    <h1>Welcome to Mojo Dispensary</h1>
-   </div>
-   <div class="order-online">
-Order Online
-   </div> 
-   <div class="boxes">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-   </div>
 
- </div>
- </div>
+<div class="whole">
+
+<ul class="home">
+    <li>Online Shop</li>
+    <li>Get medical card</li>
+    <li>Blog</li>
+    <li><img src="./MOJO LOGO.png"></li>
+    <li>About us</li>
+    <li>Contact</li>
+</ul>
+
+<div class="image">
+    <img src="./The Mojo Dispensary Image.png">
+    <div class="mojo-text">Welcome to Mojo Dispensary</div>
+    <div class="order-online">Order Online</div>
 </div>
+
 <div class="second-part">
     <div class="merch">
-        <img src="./Merch.png" class="merch-image">
-        <div class="merch-text">
-            <div class="Our-Merch">
-            Our Merch
-        </div>
-        <div class="shop-merch">
-            Shop now
-        </div>
-        </div>
+        <img src="./Merch.png">
+        <div class="Our-Merch">Our Merch</div>
+        <div class="shop-merch">Shop now</div>
     </div>
     <div class="our-products">
-        <img src="./Our Products.png" class="product-image">
-        <div class="ourproduct-text">
-            <div class="product-text">
-            Our products
-        </div>
-        <div class="shop-product">
-            Shop now
-        </div>
-        </div>
+        <img src="./Our Products.png">
+        <div class="product-text">Our Products</div>
+        <div class="shop-product">Shop now</div>
     </div>
 </div>
 
 <div class="third-part">
-    <div class="image">
-    <div class="Big-image">
-    <img src="./WhoWeAre Big.png">
-    </div>
-    <div class="UpperRightImage">
-    <img src="./WhowEAre UpperRight.png">
-    </div>
-    <div class="LowerLeftImage">
-        <img src="./WhoWeAre LowerLeft.png">
-    </div>
-    </div>
+    <div class="Big-image"><img src="./WhoWeAre Big.png"></div>
     <div class="text">
-        <div class="WhoWeAre">
-            Who We Are
-        </div>
+        <div class="WhoWeAre">Who We Are</div>
         <div class="other-text">
-            We are a small, locally owned dispensary here to serve the <br />
-            medical needs of Nixa and our surrounding area. We have on <br />
-            staff an in-house pharmacist who will be available for face to <br />
-            face consultations.
+           We are a small, locally owned dispensary here to serve the medical needs of Nixa and our surrounding area. We have on staff an in-house pharmacist who will be available for face to face consultations.
+ 
+
         </div>
-        <div class="learn-more">
-            Learn more
-        </div>
+        <div class="learn-more">Learn more</div>
     </div>
 </div>
+
 <div class="fourth-part">
-    <div class="Our-Philosophy">
-        Our Philosophy
-    </div>
-
+    <div class="Our-Philosophy">Our Philosophy</div>
     <div class="area">
-<div class="cannabis">
-    <img src="./Cannabis Product.png">
- <div class="cannabisText">
-    <div class="header">
-        Cannabis Products <br \>
-        Made in Missouri
-    </div>
-    <div class="other">
-        All of our products come from the finest marijuana <br \>
-         growers and manufactures within the state. <br \>
-    </div>
- </div>
-</div>
-<div class="KeptFresh">
-    <img src="./Kept Fresh.png">
- <div class="keptText">
-    <div class="header">
-       Kept fresh
-    </div>
-    <div class="other">
-        We work every day to ensure all of our flower is <br \>
-        kept at the right relative humidity before leaving <br \>
+        <div class="cannabis">
+            <img src="./Cannabis Product.png">
+            <div class= "other"> 
+                <h1 style="font-family: 'Margin Demo', sans-serif;">Cannabis Products Made in Missouri</h2>
+            All of our products come from the finest marijuana 
+         growers and manufactures within the state.
+            </div>
+        </div>
+        <div class="fresh">
+            <img src="./Kept Fresh.png">
+            <div class="other">
+           <h2 style="font-family: 'Margin Demo', sans-serif;">Kept Fresh</h2>
+
+        We work every day to ensure all of our flower is 
+        kept at the right relative humidity before leaving
         our store.
+    </div>
+        </div>
+        <div class="onsitePharmacist">
+            <img src="./Onsite Pharmacist.png">      
+           <div class="other">
+<h2 style="font-family: 'Margin Demo', sans-serif;">Onsite Pharmacist</h2>
+
+        To better the patient experience we offer an in-house 
+        Pharmacist for private consultations. Best used for 
+        drug on drug interactions, and to find the right product
+        to cater to your medical needs.
 
     </div>
- </div>
-</div>
-<div class="pharmacist">
-    <img src="./Onsite Pharmacist.png">
- <div class="pharmacistText">
-    <div class="header">
-       Onsite <br \>
-       Pharmacist <br \>
+        </div>
+        <div class="lab">
+            <img src="./Locally Lab Tested.png">
+            <div class="other">
+<h2 style="font-family: 'Margin Demo', sans-serif;">Locally Lab Tested</h2>
+
+        Each individual product that comes from the 
+        manufacturers or cultivation goes though local 
+        vigorous lab testing before reaching our shelves.
     </div>
-    <div class="other">
-        To better the patient experience we offer an in-house <br \>
-        Pharmacist for private consultations. Best used for <br \>
-        drug on drug interactions, and to find the right product <br \>
-        to cater to your medical needs. <br \>
+        </div>
+        <div class="driveThrough">
+            <img src="./Drive-Through.png">
+                <div class="other">
+<h2 style="font-family: 'Margin Demo', sans-serif;">Drive-Through</h2>
+
+       Our drive-up window allows patients with mobile
+       impairments to have access without leaving the seat of 
+       their car. It's also great for any patient that is running 
+       short on time. 
 
     </div>
- </div>
+        </div>
+    </div>
 </div>
-<div class="lab">
-    <img src="./Locally Lab Tested.png">
- <div class="labText">
-    <div class="header">
-       Locally Lab Tested
-    </div>
-    <div class="other">
-        Each individual product that comes from the <br \>
-        manufacturers or cultivation goes though local <br \>
-        vigorous lab testing before reaching our shelves. <br \>
-    </div>
- </div>
-</div>
-<div class="drive">
-    <img src="./Drive-Through.png">
- <div class="driveText">
-    <div class="header">
-       Drive-through
-    </div>
-    <div class="other">
-       Our drive-up window allows patients with mobile <br \>
-       impairments to have access without leaving the seat of <br \>
-       their car. It's also great for any patient that is running <br \>
-       short on time. <br \>
 
-    </div>
- </div>
-</div>
-    </div>
-</div>
 <div class="fifth-part">
-    <div class="latestArticle">
-Latest Article
-</div>
-<div class="view">
-            View all blog post
+    <div class="latest">
+    <div class="latestArticle">Latest Article</div>
+    <div class="view">View all blog posts</div>
+    </div>
+    <div class="articles">
+        <div class="thanksgiving">
+            <img src="./Thanksgiving.png">
+            <div class="byKenna">NOV 22, 2022 | BY KENNA</div>
+            <div class="afterKenna">Thanksgiving food drive</div>
         </div>
-        <div class="articles">
-            <div class="thanksgiving">
-                <div class="thanksgivingImage">
-                <img src="./Thanksgiving.png">
-                </div>
-                <div class="thanksgivingText">
-                    <div class="byKenna">
-                        NOVEMBER 22, 2022 | BY KENNA
-                    </div>
-                    <div class="afterKenna">
-                        Thanksgiving food drive
-                    </div>
-                </div>
-            </div>
-            <div class="happy">
-                <div class="happyImage">
-                <img src="./USA.png">
-                </div>
-                <div class="thanksgivingText">
-                    <div class="byKenna">
-                        NOVEMBER 22, 2022 | BY KENNA
-                    </div>
-                    <div class="afterKenna">
-                        Happy almost 4th of july sale
-                    </div>
-                </div>
-            </div>
-             <div class="depression">
-                <div class="depressionImage">
-                <img src="./Depression.png">
-                </div>
-                <div class="thanksgivingText">
-                    <div class="byKenna">
-                        NOVEMBER 22, 2022 | BY KENNA
-                    </div>
-                    <div class="afterKenna">
-                        Can you get a medical card for <br \>
-                        dipression in Missouri <br \>
-                    </div>
-                </div>
-            </div>
+        <div class="happy">
+            <img src="./USA.png">
+            <div class="byKenna">NOV 22, 2022 | BY KENNA</div>
+            <div class="afterKenna">4th of July sale</div>
         </div>
+        <div class="depression">
+            <img src="./Depression.png">
+            <div class="byKenna">NOV 22, 2022 | BY KENNA</div>
+            <div class="afterKenna">Medical card for depression?</div>
+        </div>
+    </div>
 </div>
+
 <div class="sixth-part">
-   <div class="reachImage">
-    <img src="./ReachOut.png">
-   </div> 
-   <div class="reachText">
-    <div class="reachHeader">
-       Reach Out
-    </div>
-    <div class="reachOther">
-       Have any questions about the process here or <br \>
-       just needing some additional general info? <br \>
-    </div>
-    <div class="email">
-            Send us an email
-        </div>
-
- </div>
+    <div class="reachImage"><img src="./ReachOut.png"></div>
+    <div class="reach">
+        <div class="reachHeader">Reach Out</div>
+        <div class="other">Have any questions about the process here or just needing some additional general info?
 </div>
-<div class="seventh-part">
-    <div class="followUs">
-        Follow us <br \>
-        On instagram <br \>
+        <div class="email">Send us an email</div>
     </div>
-    <div class="question">
-       Have any questions about the process here or <br \>
-       just needing some additional general info? <br \>
-    </div>
+</div>
 
+<div class="seventh-part">
+    <div class="beginning">
+    <div class="instagram">Follow us on Instagram</div>
+    <div class="questions">Have any questions about the process here or just needing some additional general info?
+</div>
+</div>
     <div class="igImages">
         <img src="./Ig1.png">
         <img src="./ig2.png">
@@ -777,57 +161,28 @@ Latest Article
         <img src="./ig5.png">
     </div>
 </div>
+
 <div class="last-part">
- <div class="navigation">
-   <h2 style="font-family: 'Margin Demo', sans-serif;">Navigation links</h2>
-   Home
-   <br>
-    About
-    <br>
-    Online Shop
-    <br>
-    Merch Shop
-    <br>
-    Get Medical card
-    <br>
-    Contact
-    <br>
- </div>
- <div class="location">
- <h2 style="font-family: 'Margin Demo', sans-serif;">Locations</h2>
-     Medical Marijuana Dispensary in Nixa, MO
-
-    <br>
-    Medical Marijuana Dispensary near Springfield, MO
-    <br>
-
- </div>
- <div class="hours">
-    <h2 style="font-family: 'Margin Demo', sans-serif;">Opening hours</h2>
-
-    Mon - Fri : 10m - 7pm
-    <br>
-    Saturday : 10am - 5pm
-    <br>
-    Sunday : Closed
- </div>
- <div class="news">
-     <h2 style="font-family: 'Margin Demo', sans-serif;">Newsletter</h2>
-     Subscribe to our newsletter
-     <br>
-     <div class="enter">
-      Enter your email
-     </div>
-     <br>
-     <div class="signUp">
-        Sign me up →
-     </div>
-     <div class="iconsImg">
-        <img src="./instagram.png">
-        <img src="./facebook.png">
-     </div>
- </div>
- </div>
+    <div class="navigation">
+        <h2>Navigation</h2>
+        Home<br>About<br>Online Shop<br>Merch Shop<br>Get Medical Card<br>Contact
     </div>
+    <div class="location">
+        <h2>Locations</h2>
+       Medical Marijuana Dispensary in Nixa, MO<br>Medical Marijuana Dispensary near Springfield, MO
+    </div>
+    <div class="hours">
+        <h2>Hours</h2>
+        Mon-Fri: 10am-7pm<br>Saturday: 10am-5pm<br>Sunday: Closed
+    </div>
+    <div class="news">
+        <h2>Newsletter</h2>
+        <div class="enter">Enter your email</div>
+        <div class="signUp">Sign me up →</div>
+    </div>
+</div>
+
+</div>
 </body>
+
 </html>
