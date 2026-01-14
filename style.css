@@ -19,9 +19,10 @@ body{
 }
 .home{
     display: flex;
-    gap: 100px;
+    gap: 50px;
     font-family: 'Margin Demo', sans-serif;
     font-size: 24px;
+    justify-content: space-around;
 }
 li{
     list-style: none;
@@ -69,6 +70,8 @@ display: flex;
 }
 .second-part{
     display: flex;
+    justify-content: space-between;
+    gap: 5px;
     font-family: 'Margin Demo', sans-serif;
    width: 100%;
 }
@@ -119,22 +122,22 @@ max-width: 1400px;
 }
 .UpperRightImage img{
     position: absolute;
-   bottom :80%;
-   right: 100%;
-   width: 100%
+   top: 180%;
+   right: 15%;
+   width: 100%;
    
 }
 
 .LowerLeftImage img{
      position: absolute;
-     top :290px;
-   right:500px;
-   width: 154.75px;
-   height: 164.05px;
+     top: 210%;
+   right: 40%;
+   width: 100%;
 }
 .WhoWeAre{
     font-family: 'Margin Demo', sans-serif;
     font-size: 55px;
+    width: 150px;
 }
 .other-text{
     font-size: 18px;
@@ -403,6 +406,9 @@ background: #3C5765;
 } 
 
   @media (max-width: 768px) {
+    .whole{
+        width: 100%;
+    }
  .merch, .our-products{
     width: 100%;
  }
@@ -434,6 +440,7 @@ background: #3C5765;
     position: absolute;
     font-size: 10px;
      padding: 8px 20px;
+     
   }
   .view{
     font-size: 15px;
@@ -447,6 +454,21 @@ background: #3C5765;
   .thanksgiving, .happy, .depression{
     max-width: 90%;
   }
+  .UpperRightImage img{
+    position: absolute;
+   top: 11%;
+   right: 1%;
+   width: 100px;
+   
+}
+
+.LowerLeftImage img{
+     position: absolute;
+     top: 132%;
+   right: 66%;
+  width: 100px;
+}
+
   }
   @media(max-width: 768px){
     .home {
