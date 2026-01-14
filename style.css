@@ -46,7 +46,6 @@ display: flex;
     left: 5%;
     color: #F2F0EB;
     font-size: 160px;
-    /* font-size: clamp(36px, 6vw, 90px); */
 
 }
 .order-online {
@@ -72,8 +71,9 @@ display: flex;
     display: flex;
     justify-content: space-between;
     gap: 5px;
+    padding: 20px;
     font-family: 'Margin Demo', sans-serif;
-   width: 100%;
+   width: 90%;
 }
 .second-part img {
     width: 100%;
