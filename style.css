@@ -406,6 +406,9 @@ background: #3C5765;
 } 
 
   @media (max-width: 768px) {
+    body{
+        width: 100%;
+    }
     .whole{
         width: 100%;
     }
@@ -419,6 +422,10 @@ background: #3C5765;
 
     .third-part, .sixth-part {
         flex-direction: column;
+    }
+    .fifth-part{
+        width: 100%;
+    
     }
     .last-part, .latest{
         flex-direction: column;
@@ -448,11 +455,11 @@ background: #3C5765;
      width: 50%;
   }
   .articles img{
-  width: 90%;
+  width: 100%;
 
   }
   .thanksgiving, .happy, .depression{
-    max-width: 90%;
+    max-width: 100%;
   }
   .UpperRightImage img{
     position: absolute;
