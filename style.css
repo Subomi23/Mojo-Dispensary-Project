@@ -122,16 +122,16 @@ max-width: 1400px;
 }
 .UpperRightImage img{
     position: absolute;
-   top: 180%;
-   right: 15%;
+   top: 10%;
+   left: 80%;
    width: 100%;
    
 }
 
 .LowerLeftImage img{
      position: absolute;
-     top: 210%;
-   right: 40%;
+     top: 60%;
+   right: 80%;
    width: 100%;
 }
 .WhoWeAre{
@@ -151,7 +151,9 @@ max-width: 1400px;
 .LowerLeftImage img {
     width: 150px;
 }
-
+.who{
+    position: relative;
+}
 .learn-more{
     font-family: 'Margin Demo', sans-serif;
     background: #3C5765;
@@ -456,17 +458,20 @@ background: #3C5765;
   }
   .UpperRightImage img{
     position: absolute;
-   top: 11%;
-   right: 1%;
+   top: 10%;
+   left: 70%;
    width: 100px;
    
 }
 
 .LowerLeftImage img{
      position: absolute;
-     top: 132%;
-   right: 66%;
+     top: 52%;
+   right: 69%;
   width: 100px;
+}
+.who{
+    position: relative;
 }
 
   }
