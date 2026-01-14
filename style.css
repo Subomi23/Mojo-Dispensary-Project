@@ -399,12 +399,10 @@ background: #3C5765;
     text-align: center;
 
 }
-.iconsImg{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 80px;
-    top: 10px;
+.icons{
+   display: flex;
+   padding: 15px;
+     gap: 10px;
 } 
 
   @media (max-width: 768px) {
